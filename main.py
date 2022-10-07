@@ -26,5 +26,5 @@ def display():
 def main():
     return
 
-def __name___():
-    main()
+if __name__ == "__main__":
+    main() 
