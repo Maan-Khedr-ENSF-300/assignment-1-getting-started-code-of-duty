@@ -96,9 +96,6 @@ def main():
     operator_list.append(validate_operator(words[1]))
     integers_list.append(validate_integer(words[2]))
 
-    print("Operator's List: {}". format(operator_list))
-    print("Integer's List: {}". format(integers_list))
-
     display(operator_list, integers_list)
     print("Thank you for using this terminal calculator.")
     return
