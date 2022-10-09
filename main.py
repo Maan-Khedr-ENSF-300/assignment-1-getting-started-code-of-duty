@@ -24,11 +24,17 @@ def myDiv(value_one, value_two):
     result = operator_dict['/'](value_one, value_two)
     return result
 
-def validate_integer():
-    return
+def validate_integer(value, str):
+    while value != int(value):
+        print("Error: incorrect integer input")
+        value = input(('Please enter the {} integer: ').format(str))
+    return 1
 
-def validate_operator():
-    return
+def validate_operator(operator, str):
+    while operator not in operator_dict.keys():
+        print("Error: incorrect operator input")
+        operator = input(('Please enter the {} operator: ').format(str))
+    return 1
 
 def evaluate_expression(): 
     return
