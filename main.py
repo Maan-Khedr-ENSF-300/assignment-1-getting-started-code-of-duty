@@ -1,15 +1,22 @@
 
-def myAdd():
-    return
+import operator
 
-def mySub():
-    return
+operator_dict = {
+    '+': operator.add,
+    '-': operator.sub,
+    '*': operator.mul,
+    '/': operator.floordiv,
+}
+
+def myAdd(value_one, value_two):
+    return 
+
+def mySub(value_one, value_two):
+    result = operator_dict['-'](value_one, value_two)
+    return result
 
 def myMul():
-    return
-
-def myDiv():
-    return
+    return 
 
 def validate_integer():
     return
