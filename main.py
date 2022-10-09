@@ -73,8 +73,6 @@ def evaluate_expression(operator_list, integers_list):
     if (operator_list[0] == '+') and (operator_list[1] == '*'):
         final_result = myMul((myAdd(value_list[0], value_list[1])), value_list[2]) 
 
-
-
     return final_result
 
 
@@ -82,8 +80,8 @@ def display(operator_list, integers_list):
     final_result = evaluate_expression(operator_list, integers_list)
     operator_list.append('=')
     integers_list.append(final_result)
-    print("\nThe result of the entered equation is:\n\t{} {} {} {} {} {} {}\n".format(integers_list[0], operator_list[0], integers_list[1], operator_list[1], integers_list[2], operator_list[2], integers_list[3]))
-
+    print("\nThe result of the entered equation is:\n\t{} {} {} {} {} {} {}\n".format
+    (integers_list[0], operator_list[0], integers_list[1], operator_list[1], integers_list[2], operator_list[2], integers_list[3]))
     return
 
 def main():
@@ -102,7 +100,6 @@ def main():
                         integers_list = [first_integer, second_integer, third_integer]
     
     display(operator_list, integers_list)
-
     return
 
     
