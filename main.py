@@ -18,10 +18,6 @@ def mySub(value_one, value_two):
 def myMul():
     return 
 
-def myDiv(value_one, value_two):
-    result = operator_dict['/'](value_one, value_two)
-    return result
-
 def validate_integer():
     return
 
