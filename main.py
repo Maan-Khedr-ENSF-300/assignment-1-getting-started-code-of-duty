@@ -19,9 +19,9 @@ def myMul():
     return 
 
 def myDiv(value_one, value_two):
-    sub_result = operator_dict['/'](value_one, value_two)
-    return sub_result
-    
+    result = operator_dict['/'](value_one, value_two)
+    return result
+
 def validate_integer():
     return
 
