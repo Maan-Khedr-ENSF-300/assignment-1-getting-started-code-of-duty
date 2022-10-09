@@ -16,8 +16,9 @@ def mySub(value_one, value_two):
     result = operator_dict['-'](value_one, value_two)
     return result
 
-def myMul():
-    return 
+def myMul(value_one, value_two):
+    result = operator_dict['*'](value_one, value_two)
+    return result
 
 def myDiv(value_one, value_two):
     result = operator_dict['/'](value_one, value_two)
@@ -29,7 +30,7 @@ def validate_integer():
 def validate_operator():
     return
 
-def evaluate_expression():
+def evaluate_expression(): 
     return
 
 def display():
