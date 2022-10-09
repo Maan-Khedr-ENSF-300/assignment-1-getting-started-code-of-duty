@@ -9,7 +9,8 @@ operator_dict = {
 }
 
 def myAdd(value_one, value_two):
-    return 
+    result = operator_dict['+'](value_one, value_two)
+    return result 
 
 def mySub(value_one, value_two):
     result = operator_dict['-'](value_one, value_two)
