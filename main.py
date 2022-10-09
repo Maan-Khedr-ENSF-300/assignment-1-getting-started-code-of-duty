@@ -25,7 +25,7 @@ def myDiv(value_one, value_two):
     return result
 
 def validate_integer(value, str):
-    while value != int(value):
+    while value.isnumeric() != True:
         print("Error: incorrect integer input")
         value = input(('Please enter the {} integer: ').format(str))
     return 1
@@ -43,7 +43,21 @@ def display():
     return
 
 def main():
-    return
+    words = ['first', 'second', 'third']
+    first_integer = input('Please enter the first integer: ')
+    if validate_integer(first_integer, words[0]) == 1:
+        first_operator = str(input('Please enter the first operator: '))
+        if validate_operator(first_operator, words[0]) == 1:
+            second_integer = input('Please enter the second integer: ')
+            if validate_integer(second_integer, words[1]) == 1:
+                second_operator = str(input('Please enter the second operator: '))
+                if validate_operator(second_operator, words[1]) == 1:
+                    third_integer = input('Please enter the third integer: ')
+                    if validate_integer(third_integer, words[2]) == 1:
+                        operator_list = [first_operator, second_operator] 
+                        integers_list = [first_integer, second_integer, third_integer]
+
+    
 
 if __name__ == "__main__":
     main() 
