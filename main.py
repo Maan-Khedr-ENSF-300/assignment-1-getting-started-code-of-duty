@@ -8,9 +8,8 @@ def mySub():
 def myMul():
     return
 
-def myDiv(value_one, value_two):
-    sub_result = operator_dict['/'](value_one, value_two)
-    return sub_result
+def myDiv():
+    return
 
 def validate_integer():
     return
