@@ -36,10 +36,19 @@ def validate_operator(operator, str):
         operator = input(('Please enter the {} operator: ').format(str))
     return 1
 
-def evaluate_expression(): 
-    return
+def evaluate_expression(operator_list, integers_list):  
 
-def display():
+
+    final_result = 1
+    return final_result
+
+
+def display(operator_list, integers_list):
+    final_result = evaluate_expression(operator_list, integers_list)
+    operator_list.append('=')
+    integers_list.append(final_result)
+    print("The result of the entered equation is:\n\t{} {} {} {} {} {} {}\n".format(integers_list[0], operator_list[0], integers_list[1], operator_list[1], integers_list[2], operator_list[2], integers_list[3]))
+
     return
 
 def main():
@@ -56,6 +65,10 @@ def main():
                     if validate_integer(third_integer, words[2]) == 1:
                         operator_list = [first_operator, second_operator] 
                         integers_list = [first_integer, second_integer, third_integer]
+    
+    display(operator_list, integers_list)
+
+    return
 
     
 
