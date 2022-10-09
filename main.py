@@ -24,8 +24,7 @@ def myDiv(value_one, value_two):
     result = operator_dict['/'](value_one, value_two)
     return result
 
-def validate_integer(value, str):
-    
+def validate_integer(value, str):    
     while value.lstrip("-").isdigit() != True:
         print("Error: incorrect integer input")
         value = input(('Please enter the {} integer: ').format(str))
