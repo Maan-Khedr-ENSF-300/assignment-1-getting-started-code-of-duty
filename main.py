@@ -25,9 +25,11 @@ def myDiv(value_one, value_two):
     return result
 
 def validate_integer(value, str):
-    while value.isnumeric() != True:
+    
+    while value.lstrip("-").isdigit() != True:
         print("Error: incorrect integer input")
         value = input(('Please enter the {} integer: ').format(str))
+    
     return 1
 
 def validate_operator(operator, str):
