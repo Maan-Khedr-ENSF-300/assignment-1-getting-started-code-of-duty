@@ -23,7 +23,7 @@ def validate_integer(str):
     return value
 
 def validate_operator(str):
-    operators_allowed = ['+','-','*','/','//']
+    operators_allowed = ['+','-','*','/']
     operator = input(('Please enter the {} operator: ').format(str))
     while operator not in operators_allowed:
         print("Error: incorrect operator input")
