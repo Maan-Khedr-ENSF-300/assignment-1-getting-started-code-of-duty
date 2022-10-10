@@ -1,27 +1,18 @@
 
-import operator
-
-operator_dict = {
-    '+': operator.add,
-    '-': operator.sub,
-    '*': operator.mul,
-    '/': operator.floordiv,
-}
-
 def myAdd(value_one, value_two):
-    result = operator_dict['+'](value_one, value_two)
+    result = value_one + value_two
     return result 
 
 def mySub(value_one, value_two):
-    result = operator_dict['-'](value_one, value_two)
+    result = value_one - value_two
     return result
 
 def myMul(value_one, value_two):
-    result = operator_dict['*'](value_one, value_two)
+    result = value_one * value_two
     return result
 
 def myDiv(value_one, value_two):
-    result = operator_dict['/'](value_one, value_two)
+    result = value_one // value_two
     return result
 
 def validate_integer(str):
@@ -32,8 +23,9 @@ def validate_integer(str):
     return value
 
 def validate_operator(str):
+    operators_allowed = ['+','-','*','/','//']
     operator = input(('Please enter the {} operator: ').format(str))
-    while operator not in operator_dict.keys():
+    while operator not in operators_allowed:
         print("Error: incorrect operator input")
         operator = input(('Please enter the {} operator: ').format(str))
     return operator
